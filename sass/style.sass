@@ -1,0 +1,602 @@
+// All style
+body
+   font-family: 'Ubuntu', sans-serif
+   font-size: 16px
+   font-weight: 400
+   background: #040F28
+
+.container
+   max-width: 1200px
+   width: 100%
+   margin: 0 auto
+
+.up 
+   position: fixed
+   bottom: 50px   
+   right: 50px
+   @media (max-width: 1439px)
+      display: none
+   &__icon
+      font-size: 58px
+      color: #611f9f
+      &:active
+         color: #611f9f
+      &:hover
+         color: #7828c3
+a 
+   display: block
+
+.btn
+   padding: 16px 32px
+   border: 2px solid #C4C4C4
+   border-radius: 87px
+   font-family: 'DM Sans', sans-serif
+   font-weight: 500
+   text-align: center
+   color: #FFFFFF
+   transition: all .3s
+   &:hover
+      opacity: .7
+   &-red
+      background: #FC3867
+      border: none
+
+h1 
+   margin-bottom: 20px
+   font-weight: 700
+   font-size: 56px
+   line-height: 74px
+   text-transform: capitalize
+   color: #C4C4C4
+
+.title 
+   font-weight: 700
+   font-size: 40px
+   line-height: 60px
+   letter-spacing: -0.5px
+   color: #FFFFFF
+
+.text
+   font-weight: 400
+
+
+// Header
+.header
+   position: relative
+   overflow: hidden
+   @media (max-width: 768px)
+      padding-bottom: 30px
+   & .wrapper
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      align-items: center
+      padding: 50px 30px 0 30px
+      &:first-child
+         margin-bottom: 60px
+         @media (max-width: 750px)
+            margin-bottom: 0
+      @media (max-width: 768px)
+         &:last-of-type
+            flex-direction: column-reverse
+   & .logo  
+      @media (max-width: 850px)
+         width: 100%
+         text-align: center
+         margin-bottom: 20px
+   & .logo a
+      margin-right: 10px
+      font-family: 'Raleway', sans-serif
+      font-weight: 700
+      font-size: 24px
+      color: #C4C4C4
+      transition: color .3s
+      &:hover
+         color: #FFFFFF
+   &-menu
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      max-width: 650px
+      width: 100%
+      &__list
+         display: flex
+         justify-content: space-between
+         align-items: center
+         flex-wrap: wrap
+         max-width: 470px
+         width: 100%
+         @media (max-width: 670px)
+            margin-bottom: 20px
+      &__link
+         font-weight: 500
+         line-height: 18px
+         color: #C4C4C4
+         transition: color .3s
+         &:hover
+            color: #FFFFFF
+         @media (max-width: 380px)
+            font-size: 12px
+      & .btn
+         @media (max-width: 670px)
+            padding: 10px 20px
+            margin: 0 auto
+            font-size: 12px
+   &-content
+      max-width: 490px
+      @media (max-width: 950px)
+         max-width: 400px
+      @media (max-width: 850px)
+         max-width: 300px
+      @media (max-width: 850px)
+         max-width: 400px
+      & h1
+         @media (max-width: 750px)
+            font-size: 36px
+            line-height: 46px
+      & .header-text
+         margin-bottom: 40px
+         line-height: 32px
+         color: #646464
+         @media (max-width: 768px)
+            color: #ffffff
+      & .btn
+         width: 170px
+         @media (max-width: 768px)
+            padding: 14px 20px
+            margin: 0 auto
+            font-size: 12px
+
+
+   &-photo
+      margin-right: 30px
+      max-width: 497px
+      width: 100%
+      height: 656px
+      background: url('../img/photo.jpg') center/cover no-repeat
+      @media (max-width: 1100px)
+         max-width: 350px
+         height: 500px 
+      @media (max-width: 768px)
+         margin-bottom: 20px
+      
+   & .line
+      position: absolute
+      z-index: -1
+      &-left
+         top: -250px
+         left: -100px
+      &-right
+         bottom: -290px
+         right: 0px
+// Section: Statistic
+.statistic
+   padding: 90px 10px
+   background: #FFFFFF
+   & .wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      max-width: 900px
+      width: 100%
+      margin: 0 auto
+   &-item
+      text-align: center
+      color: #070707
+      max-width: 33.3%
+      width: 100%
+      @media (max-width: 500px)
+         padding: 0 10px 
+      // @media (max-width: 950px)
+      //    max-width: 250px
+      // @media (max-width: 800px)
+      //    max-width: 200px
+      &:not(:last-child)
+         border-right: 1px solid #D8D8D8
+   &-number
+      margin-bottom: 15px
+      display: block
+      font-weight: 700
+      font-size: 64px
+      @media (max-width: 750px)
+         font-size: 32px
+      @media (max-width: 450px)
+         font-size: 24px
+   &-text
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 18px
+      @media (max-width: 750px)
+         font-size: 12px
+      &-grey
+         font-weight: 400
+         font-size: 16px
+         color: #C4C4C4
+         @media (max-width: 750px)
+         font-size: 12px
+// Section: Benefits
+.benefits
+   padding: 150px 10px 0 10px
+   color: #FFFFFF
+   @media (max-width: 900px)
+      padding: 50px 10px 0 10px
+   &-label 
+      margin-bottom: 10px
+      display: block
+      text-align: left
+      letter-spacing: 1px
+      text-transform: uppercase
+      @media (max-width: 900px)
+         text-align: center
+      @media (max-width: 400px)
+            font-size: 16px
+   &-title
+      max-width: 470px
+      text-transform: capitalize
+      @media (max-width: 900px)
+         margin: 0 auto
+      @media (max-width: 400px)
+         font-size: 28px
+         line-height: 32px
+         margin-bottom: 20px
+   &-text  
+      max-width: 395px
+      line-height: 180%
+      @media (max-width: 900px)
+         margin: 0 auto
+      @media (max-width: 400px)
+         font-size: 14px
+   & .wrapper 
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: flex-end
+      margin-bottom: 50px
+   &-blocks
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      width: 100%
+   &-block
+      display: flex
+      width: 290px
+      @media (max-width: 900px)
+         width: 80%
+         margin: 0 auto
+         margin-bottom: 25px
+      &__icon
+         display: block
+         margin-right: 20px
+         width: 48px
+         height: 48px
+         @media (max-width: 400px)
+            width: 32px
+            height: 32px
+      &__title
+         margin-bottom: 10px
+         font-weight: 700
+         font-size: 20px
+         text-transform: capitalize
+         @media (max-width: 400px)
+            font-size: 14px
+      &__text
+         max-width: 245px
+         @media (max-width: 900px)
+         max-width: 100%
+         @media (max-width: 400px)
+            font-size: 12px
+
+// Section: Services
+
+.services
+   padding: 110px 10px 0 10px
+   @media (max-width: 500px)
+         padding: 30px 10px 0 10px
+   &-title
+      margin-bottom: 25px
+      font-size: 36px
+      text-align: center
+      @media (max-width: 500px)
+         font-size: 28px
+         line-height: 32px
+         margin-bottom: 15px
+   &-text
+      margin-bottom: 70px
+      font-weight: 500
+      font-size: 24px
+      text-align: center
+      color: #FFFFFF
+      @media (max-width: 500px)
+         margin-bottom: 30px
+   &-cards
+      display: flex
+      flex-wrap: wrap
+   &-card
+      display: flex
+      justify-content: space-between
+      background: #fff
+      border-radius: 12px
+      padding: 24px 32px
+      margin-bottom: 40px
+      width: calc(50% - 20px)
+      &:nth-child(odd)
+         margin-right: 40px
+         @media (max-width: 800px)
+            margin-right: auto
+      @media (max-width: 800px)
+         width: 80%
+         margin: 0 auto
+         margin-bottom: 20px
+      @media (max-width: 500px)
+         flex-direction: column
+         align-items: center
+         text-align: center
+      &__icon
+         display: flex
+         justify-content: center
+         align-items: center
+         margin-right: 15px
+         min-width: 80px
+         height: 80px
+         background: #FC3867
+         border-radius: 50%
+         @media (max-width: 500px)
+            margin-bottom: 20px
+            min-width: 60px
+            height: 60px
+      &__title
+         font-weight: 700
+         font-size: 24px
+         color: #000000
+         @media (max-width: 500px)
+            font-size: 18px
+            margin-bottom: 10px
+      &__text
+         line-height: 160%
+         color: #272727
+         @media (max-width: 500px)
+            font-size: 14px
+// Section: Creative
+.creative 
+   padding: 110px 10px 0 10px
+   text-align: center
+   @media (max-width: 500px)
+         padding: 30px 10px 0 10px
+   & .title
+      margin-bottom: 15px
+      @media (max-width: 500px)
+         font-size: 28px
+         line-height: 32px
+         margin-bottom: 15px
+   &-text
+      margin: 0 auto 55px auto
+      max-width: 420px
+      font-size: 14px
+      line-height: 24px
+      color: #999999
+      @media (max-width: 500px)
+         margin-bottom: 20px
+   &-gallery
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      &__item
+         margin-bottom: 24px
+         width: calc(50% - 12px)
+         height: 320px
+         border-radius: 12px
+         @media (max-width: 500px)
+            width: 90%
+            margin: 0 auto
+            margin-bottom: 20px
+
+// Section: Price
+.price
+   padding: 110px 10px 170px 10px
+   text-align: center
+   @media (max-width: 800px)
+         padding: 30px 10px 30px 10px
+   &-label
+      font-weight: 500
+      color: #FFFFFF
+   & .title
+      margin-bottom: 70px
+      @media (max-width: 500px)
+         font-size: 28px
+         margin-top: 20px
+         margin-bottom: 20px
+         line-height: 32px
+   &-cards
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      text-align: left
+      max-width: 980px
+      margin: 0 auto
+   &-card
+      position: relative
+      padding: 52px 24px 48px 24px
+      margin-bottom: 40px
+      width: 300px
+      min-height: 450px
+      background: #FFFFFF
+      border-radius: 12px
+      color: #000000
+      @media (max-width: 500px)
+         min-height: 350px
+      &:not(:last-child)
+         margin-right: 40px
+         @media (max-width: 500px)
+            margin-right: auto
+            margin-left: auto
+      &:nth-child(2)
+         @media (max-width: 980px)
+            margin-right: 0
+         @media (max-width: 600px)
+            margin-right: auto
+            margin-left: auto
+      &:first-child
+         @media (max-width: 600px)
+            margin-right: auto
+            margin-left: auto
+      &__title
+         margin-bottom: 20px
+         font-weight: 700
+         font-size: 20px
+      &__dollar
+         display: block
+         margin-bottom: 25px
+         font-weight: 500
+         font-size: 48px
+         &::after
+            content: '/month'
+            display: inline-block
+            font-weight: 400
+            font-size: 16px
+            margin-left: 10px
+      & ul
+         margin-bottom: 20px
+      & li
+         display: flex
+         margin-bottom: 15px
+         font-size: 14px   
+         color: #272727
+         &::before
+            content: ''
+            display: block
+            margin-right: 8px
+            width: 16px
+            height: 16px
+            background: url('../icons/yes.png')
+      & .btn 
+         position: absolute
+         bottom: 48px
+         left: 50%
+         transform: translateX(-50%)
+         width: 165px
+         color: #272727
+         border: 2px solid #272727
+         @media (max-width: 670px)
+            bottom: 15px
+            padding: 14px 20px
+            margin: 0 auto
+            font-size: 12px
+         &-red
+            border: 2px solid #FC3867
+            color: #FFFFFF
+// Section: Subscribe
+
+.subscribe
+   padding: 40px 10px
+   background: #ffffff
+   text-align: center
+   &-label
+      margin-bottom: 10px
+      font-weight: 600
+      color: #C4C4C4
+      @media (max-width: 500px)
+         font-size: 12px
+   &-title
+      margin-bottom: 25px
+      font-size: 40px
+      color: #212226
+      @media (max-width: 500px)
+            font-size: 28px
+            line-height: 32px
+   & .btn
+      margin: 0 auto
+      width: 170px
+      @media (max-width: 670px)
+            bottom: 15px
+            padding: 14px 20px
+            margin: 0 auto
+            font-size: 12px
+
+// Footer
+
+.footer
+   padding: 42px 10px 35px 10px
+   background: #070707
+   & .wrapper
+      display: flex
+      justify-content: space-between
+      margin-bottom: 42px
+      @media (max-width: 850px)
+         flex-direction: column-reverse
+      & .logo
+         margin-bottom: 15px
+         & a
+            font-weight: 800
+            font-size: 24px
+            color: #FFFFFF
+   & .content-block
+      max-width: 320px
+      margin-right: 10px
+      @media (max-width: 850px)
+         max-width: 80%
+         margin-left: auto
+         margin-right: auto
+   &-text
+      margin-bottom: 25px
+      font-size: 14px
+      line-height: 24px
+      color: #C4C4C4
+   &-social ul
+      display: flex
+      @media (max-width: 850px)
+         justify-content: center
+   &-social__link
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 16px
+      width: 32px
+      height: 32px
+      background: #FFFFFF
+      border-radius: 50%
+   &-social__icon
+      color: #C4C4C4
+      transition: color .2s ease-in
+      &:hover
+         color: #999898
+   &-navs
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      max-width: 750px
+      width: 100%
+      & .footer-menu
+         @media (max-width: 500px)
+            width: 50%
+            text-align: center
+         &__label
+            display: block
+            margin-bottom: 25px
+            color: #FFFFFF
+         & ul li
+            margin-bottom: 25px
+            & a
+               font-size: 14px
+               color: #C4C4C4
+               &:hover
+                  text-decoration: underline
+               @media (max-width: 400px)
+                  font-size: 12px
+   & .copy
+      padding: 35px 0 15px 0
+      text-align: center
+      border-top: 1px solid #c4c4c480
+      @media (max-width: 450px)
+            padding: 15px 0 15px 0
+      &-text
+         margin-bottom: 20px
+         font-size: 14px
+         line-height: 16px
+         color: #c4c4c480
+
+.author
+   color: #c4c4c480
+   transition: color .2s ease-in
+   &:hover
+      text-decoration: underline
+      color: #87878780
